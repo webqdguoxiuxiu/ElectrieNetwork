@@ -1,0 +1,596 @@
+*{
+    margin:0;
+    padding:0;
+}
+html,body{
+    font-size: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background-color:#fff;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Libre Baskerville', serif;
+    margin:0;
+}
+a:hover{
+    text-decoration:none;
+}
+/**************************************banner***************************************/
+div.banner{
+    padding:30px 0 0;
+    background: url("../images/1.jpg") no-repeat 0px 0px;
+    background-size:cover;
+    min-height:500px;
+    color:#ffffff;
+}
+div.banner a{
+    color:#ffffff;
+}
+div.banner .header .logo{
+    float:left;
+    margin-left:150px;
+}
+div.banner .header .logo a{
+    font-size:1em;
+    line-height:0.5em;
+
+}
+div.banner .header .logo a span{
+    display:block;
+    letter-spacing:10px;
+    font-size:.2em;
+    line-height:0.2em;
+    text-transform:uppercase;
+    margin-top:15px;
+}
+div.banner .header .mail-phone{
+    float:right;
+    margin-right:150px;
+}
+div.banner .header .mail-phone ul{
+    list-style:none;
+}
+div.banner .header .mail-phone ul li{
+    float:left;
+    padding:15px;
+    font-size:0.8em;
+}
+div.banner .header .mail-phone ul li a:hover{
+    color:#C5C5C5;
+}
+div.banner .footer{
+    text-align: center;
+    margin:10em 0 0 0em;
+}
+div.banner .footer ul li {
+    display: inline-block;
+    margin-right: 1em;
+}
+div.banner .footer ul li a {
+    font-size: .8em;
+    text-transform: uppercase;
+    display:inline-block;
+    padding: 0;
+    border-radius:50%;
+    width:100px;
+    height:100px;
+    line-height:8em;
+    text-align:center;
+    font-family:'Libre Baskerville', serif;
+    background:rgba(255, 255, 255, 0.4);
+}
+div.banner .footer ul  li.active a {
+    background-color:#2E8ABD;
+}
+div.banner .footer ul  li a:hover{
+    background-color:#2E8ABD;
+    transition:1s;
+}
+
+/*************************************about-top**************************************/
+div.about div{
+    float:left;
+}
+div.about::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+div.about .about-left{
+    padding:5em 0 6em 8em;
+    text-align:center;
+}
+div.about .about-left h3{
+    text-transform:capitalize;
+    font-size:1em;
+    color:#1FAADE;
+}
+div.about .about-left h3 span{
+    text-transform:capitalize;
+    font-size:1.5em;
+    color:#000;
+    display:block;
+}
+div.about .about-left h3 span{
+    display:block;
+    text-transform:capitalize;
+}
+div.about .about-left h2{
+    color: #fff;
+    width: 23px;
+    height: 23px;
+    margin:20px auto;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 50%;
+    background: #A3CF5C;
+    display:block;
+    cursor: default;
+    text-align:center;
+}
+div.about .about-left p{
+    color:#999;
+    font-size:10px;
+}
+div.about .about-right{
+    padding-right:0;
+}
+div.about .about-right .content{
+    width:85%;
+    height:415px;
+    background:url("../images/2.jpg") no-repeat 0 0;
+    background-size:cover;
+    position:relative;
+    overflow:hidden;
+}
+div.about .about-right .content .flow-up{
+    position:absolute;
+    right:0;
+    bottom:0;
+    width:0;
+    height:0;
+    border-bottom:100px solid #1F9ED9;
+    border-left:100px solid transparent;
+    opacity:.9;
+}
+div.about .about-right .content:hover  .flow-up{
+    border-bottom:415px solid #1F9ED9;
+    border-left:616px solid transparent;
+    transition:all .5s ease-out;/*快速开始，加速结束*/
+}
+div.about .about-right .content .info{
+    position:absolute;
+    right:15px;
+    bottom:15px;
+    color:#fff;
+    font-size:.8em;
+    boeder:1px solid #000;
+}
+div.about .about-right .content:hover .info{
+    opacity:0;
+    transition:all .5s ease-out;
+}
+div.about .about-right .content .main-content{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    text-align:center;
+    padding:30px;
+    opacity:0;
+}
+div.about .about-right .content .main-content h2{
+    color:#fff;
+    font-size:1.6em;
+    padding:0 0 12px;
+    border-bottom:1px solid #333;
+}
+div.about .about-right .content .main-content p{
+    color:#fff;
+    font-size:.7em;
+    margin:25px 0 50px;
+}
+div.about .about-right .content:hover .main-content{
+    opacity:1;
+    transition:all 1s ease-out;
+}
+
+/*************************************about-bottom**************************************/
+div.about-bottom{
+    background:url("../images/3.jpg") no-repeat 0 0;
+    background-size:cover;
+}
+div.about-bottom .container>a{
+    display:block;
+    height:200px;
+}
+div.about-bottom .container .container-bottom{
+    color:#fff;
+    text-align:center;
+    text-transform:uppercase;
+}
+div.about-bottom .container .container-bottom h3{
+    font-size:1.5em;
+    padding-bottom:20px;
+}
+div.about-bottom .container .container-bottom ul{
+    padding-bottom:70px;
+}
+div.about-bottom .container .container-bottom ul li{
+    list-style:none;
+    display:inline-block;
+    margin:0 5px;
+    font-size:.8em;
+}
+div.about-bottom .container .container-bottom ul li a{
+    color:#76B85C;
+}
+div.about-bottom .container .container-bottom ul li a:hover{
+    color:#fff;
+    transition:1s;
+}
+
+/*************************************service*******************************************/
+div.services,div.team,div.gallery,div.counting,div.mail,div.footer{
+    padding:70px 0;
+}
+div.services .container h3,div.team .container h3,div.gallery .container h3,div.mail .container h3{
+    text-transform: capitalize;
+    font-size: 2.5em;
+    text-align:center;
+}
+div.services .container p.qui,div.team .container p.qui,div.gallery .container p.qui,div.mail .container p.qui{
+    color:#999;
+    font-size:.7em;
+    text-align:center;
+    margin:.5em 0 0;
+    padding-bottom:2em;
+    position:relative;
+}
+p.qui:before,p.qui:after{
+    content: '';
+    width:12%;
+    height:1px;
+    bottom: 0%;/*为了让空元素在最下面*/
+    background:#A3CF5C;
+    position: absolute;
+}
+p.qui:before{
+    left:36%;/*横线距离左边框的距离*/
+}
+p.qui:after{
+    right:36%;/*横线距离右边框的距离*/
+}
+p.qui span:before,p.qui span:after{
+    content: '';
+    background:#A3CF5C;
+    height: 1px;
+    position: absolute;
+    bottom: 0%;/*为了让空元素在最下面*/
+    width: 3%;
+}
+p.qui span:before{
+    left: 48.5%;
+    transform: rotate(45deg);
+}
+p.qui span:after{
+    right: 48.5%;
+    transform: rotate(-45deg);
+}
+div.services .container .services-contents{
+    margin:40px auto 0;
+    width:86%;
+}
+div.services .container .services-contents .services-content{
+    float:left;
+}
+div.services .container .services-contents .services-content .words h4{
+    color:#2DA2D2;
+    font-size:1.2em;
+    text-transform:capitalize;
+    margin-bottom:20px
+}
+div.services .container .services-contents .services-content .words p{
+    color:#999;
+    font-size:.7em;
+}
+div.services .container .services-contents .services-content .row:nth-child(2){
+    padding:30px 0;
+}
+div.services .container .services-contents .left .words{
+    text-align:right;
+}
+div.services .container .services-contents .right .words{
+    text-align:left;
+}
+div.services .container .services-contents .services-content .row:hover  .words h4{
+    color:#A4CF5E;
+    transition:1.5s;
+}
+
+/*************************************Team************************************************/
+div.team{
+    background:#f5f5f5;
+}
+div.team .container .box{
+    width:85%;
+    margin:50px auto 0;
+    display:flex;
+    flex-wrap:nowrap;
+    flex-direction:row;/*默认*/
+    justify-content: center;
+}
+div.team .container .box .content .pic{
+    margin:0 13px;
+    position:relative;
+    left:0;
+    top:0;
+}
+div.team .container .box .content .pic .title{
+    position:absolute;
+    text-align:center;
+    opacity:0;
+    background:rgba(30, 30, 30, 0.42);
+    height:0;
+    left:0;
+    top:0;
+    transition:all .7s ease-out;
+}
+div.team .container .box .content:hover .pic .title{
+    opacity:1;
+    height:100%;
+}
+div.team .container .box .content .pic .title h4{
+    color:#fff;
+    font-size:1.2em;
+    padding-top:25px;
+}
+div.team .container .box .content .pic .title p{
+    color:#E4E4E4;
+    font-size:.7em;
+}
+div.team .container .box .content .pic img{
+    width:100%;
+}
+div.team .container .box .content h4{
+    color:#27A0D8;
+    font-size:1em;
+    text-transform:capitalize;
+    text-align:center;
+    margin:20px 0 30px;
+}
+div.team .container .box .content h4 span{
+    display:block;
+    color:#999;
+    font-size:.9em;
+    text-align:center;
+    margin-top:10px;
+}
+
+/*************************************gallery************************************************/
+div.gallery .container .box{
+    width:85%;
+    margin:50px auto 0;
+}
+div.gallery .container .box>div{
+    float:left;
+}
+div.gallery .container .box:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+div.gallery .container .box img{
+    width:100%;
+}
+div.gallery .container .box img:hover{
+    opacity:.5;
+}
+div.gallery .container .box .left,.right{
+    width:50%;
+}
+div.gallery .container .box .left .top{
+    margin-bottom:25px;
+}
+div.gallery .container .box .left .bottom>div{
+    width:50%;
+    float:left;
+}
+div.gallery .container .box .left .bottom:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+div.gallery .container .box .left,.right,.left .bottom .left1{
+    padding-right:15px;
+}
+div.gallery .container .box .left .bottom .right1{
+    padding-left:15px;
+}
+div.gallery .container .box .left,.left .bottom .left1 div:nth-child(1){
+    margin-bottom:35px;
+}
+div.gallery .container .box .right .top>div{
+    width:50%;
+    float:left;
+    padding:0 15px;
+    margin-bottom:30px;
+}
+div.gallery .container .box .right .bottom>div{
+    width:50%;
+    float:left;
+    padding:0 15px;
+}
+div.gallery .container .box .right .top:after,.bottom:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+div.gallery .container .box .right .middle div{
+    width:94%;
+    margin:0 15px 25px;
+}
+
+/*************************************Counting************************************************/
+div.counting{
+    background:url("../images/17.jpg") no-repeat 0 0;
+    background-size:cover;
+}
+div.counting .container .content div{
+    float:left;
+    width:25%;
+}
+div.counting .container .content:after{
+    display:block;
+    content:"";
+    clear:both;
+}
+div.counting .container .content{
+    margin:0 auto;
+    width:85%;
+}
+div.counting .container .content i{
+    display:block;
+    height:100px;
+}
+div.counting .container .content h3{
+    color:#9CCF5C;
+    text-transform: capitalize;
+    font-size:1.3em;
+    text-align:center;
+    margin-bottom:20px;
+}
+div.counting .container .content p{
+    color:#fff;
+    font-size:1.7em;
+    text-align:center;
+}
+
+/*************************************Mail************************************************/
+.mail .container .content{
+    width:85%;
+    margin:50px auto 0;
+}
+.mail .container .content .left{
+    text-transform:capitalize;
+    padding-left:10px;
+    width:30%;
+}
+.mail .container .content .left h5{
+    color:#1FAAE3;
+}
+.mail .container .content .left ul li{
+    list-style:none;
+    margin:30px 0;
+    text-transform:capitalize;
+    color:#000;
+    font-size:.9em;
+}
+.mail .container .content .left ul li i{
+    width: 40px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 50%;
+    font-size: 14px;
+    padding: .8em 0 0;
+    text-align: center;
+    margin-right: 2em;
+}
+.mail .container .content .left ul li span,a{
+    display:block;
+    color:#999;
+    line-height:1.8em;
+}
+.mail .container .content .left ul li span{
+    margin:10px 0 0 20px;
+    font-size:.8em;
+}
+.mail .container .content>div{
+    float:left;
+}
+.mail .container .content:after{
+    display:block;
+    content:"";
+    clear:both;
+}
+.mail .container .content .right{
+    width:70%;
+    padding:0 15px;
+}
+.mail .container .content .right input,textarea{
+    background:#F5F5F5;
+    opacity:.8;
+    margin-bottom:10px;
+}
+.mail .container .content .right input{
+    width:350px;
+    padding:6px;
+}
+.mail .container .content .right h5{
+    font-size:.8em;
+    margin:10px 0;
+}
+.mail .container .content .right button{
+    padding:8px 40px;
+    font-size:.8em;
+    background:#27A0D8;
+    color:#fff;
+}
+
+/*************************************footer************************************************/
+div.footer .top{
+    border-bottom:1px solid #dddddd;
+    padding-bottom:30px;
+}
+div.footer .top .container .content{
+    width:85%;
+    margin:0 auto;
+    text-align:center;
+}
+div.footer .top .container .content ul li{
+    list-style:none;
+    display:inline-block;
+    margin:0 10px;
+}
+div.footer .top .container .content ul li a{
+    color:#000;
+    font-size:.8em;
+    text-transform:uppercase;
+}
+div.footer .top .container .content p{
+    color:#999;
+    font-size:.7em;
+}
+div.footer .top .container .content div i{
+    width:5px;
+    height:5px;
+}
+div.footer .top .container .content div a{
+    font-size:.7em;
+    color:#000;
+}
+div.footer .top .container .content div a:hover{
+    color:#999;
+    transition:all 1s ease-out;
+}
+div.footer .bottom{
+    border-top:1px solid #dddddd;
+    margin-top:2px;
+}
+div.footer .bottom p{
+    text-align:center;
+    font-size:.8em;
+    margin:50px auto 0;
+    color:#999;
+}
+div.footer .bottom p a{
+    display:inline-block;
+    color:#27A0D8;
+}
+div.footer .bottom p a:hover{
+    color:#999;
+    transition:all 1s ease-out;
+}
+
+
+
+
